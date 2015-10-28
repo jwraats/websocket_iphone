@@ -600,6 +600,7 @@
 				2D56D1C21BE16D78008BCEE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D56D1C31BE16D78008BCEE3 /* Build configuration list for PBXNativeTarget "websockets-iphoneTests" */ = {
 			isa = XCConfigurationList;
@@ -608,6 +609,7 @@
 				2D56D1C51BE16D78008BCEE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2D56D1C61BE16D78008BCEE3 /* Build configuration list for PBXNativeTarget "websockets-iphoneUITests" */ = {
 			isa = XCConfigurationList;
@@ -616,6 +618,7 @@
 				2D56D1C81BE16D78008BCEE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
