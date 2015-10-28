@@ -51,9 +51,9 @@ class ViewController: UIViewController {
         self.ws.event.message = { message in
             if let text = message as? String {
                 if text == "isGreen: 'true'" {
-                    print("GROEN")
                     self.view.backgroundColor = UIColor.greenColor()
-                }else{
+                }
+                else if text == "isGreen: 'false'"{
                     self.view.backgroundColor = UIColor.redColor()
                 }
             }else{
