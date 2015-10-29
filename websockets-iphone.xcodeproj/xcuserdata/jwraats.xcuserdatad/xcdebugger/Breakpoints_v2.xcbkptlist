@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "websockets-iphone/ViewController.swift"
-            timestampString = "467760994.352711"
+            timestampString = "467798192.71982"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
             landmarkName = "startUpSockets()"
             landmarkType = "5">
          </BreakpointContent>

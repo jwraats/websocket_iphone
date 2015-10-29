@@ -16,12 +16,29 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCD-9u-mgT">
+                                <rect key="frame" x="279" y="52.5" width="264" height="42"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uCD-9u-mgT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LgV-Wu-ljg"/>
+                            <constraint firstItem="uCD-9u-mgT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zVx-RJ-0vd"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblConnection" destination="uCD-9u-mgT" id="rNw-eN-ngw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="358"/>
         </scene>
     </scenes>
 </document>

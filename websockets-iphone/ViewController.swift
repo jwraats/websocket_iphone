@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var orientation: String!
     let ws = WebSocket("wss://www.senzingyou.nl:1337")
     
+    @IBOutlet weak var lblConnection: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "sendRotated", name: UIDeviceOrientationDidChangeNotification, object: nil)
@@ -41,15 +42,20 @@ class ViewController: UIViewController {
     func startUpSockets(){
         self.ws.event.open = {
             self.view.backgroundColor = UIColor.orangeColor()
+            self.lblConnection.text = "Verbinding aan het maken.."
         }
         self.ws.event.close = { code, reason, clean in
+            
+            self.lblConnection.text = "Verbinding is verbroken"
             self.view.backgroundColor = UIColor.orangeColor()
         }
         self.ws.event.error = { error in
             self.view.backgroundColor = UIColor.orangeColor()
+            self.lblConnection.text = "Geen verbinding kunnen krijgen!"
         }
         self.ws.event.message = { message in
             if let text = message as? String {
+                self.lblConnection.text = "Verbonden"
                 if text == "isGreen: 'true'" {
                     self.view.backgroundColor = UIColor.greenColor()
                 }
@@ -58,6 +64,7 @@ class ViewController: UIViewController {
                 }
             }else{
                 self.view.backgroundColor = UIColor.orangeColor()
+                self.lblConnection.text = "Er is iets mis gegaan!"
             }
         }
     }
